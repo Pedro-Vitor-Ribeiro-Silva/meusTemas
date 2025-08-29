@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Back-End",
+    "text": "Java, Python"
+  },
+  {
+    "title": "Cybersecurity",
+    "text": "Segurança digital, defesa contra ataques e boas práticas."
+  },
+  {
+    "title": "Inteligência Artificial (AI)",
+    "text": "Chatbots e soluções inteligentes."
+  },
+  {
+    "title": "Front-End",
+    "text": "React e a construção de interfaces modernas."
+  },
+  {
+    "title": "Mobile",
+    "text": "React Native e o desenvolvimento para Android/iOS."
+  }
+]

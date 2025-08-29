@@ -1,32 +1,26 @@
-import { Text, View, StyleSheet, ScrollView } from "react-native";
+import { StyleSheet, ScrollView, View, Text } from "react-native";
+import Card from "../components/Card";
+import temas from "../temas.json";
+import { useFonts } from "expo-font";
 
 export default function Index() {
+
+    const [fontsLoaded] = useFonts({
+    Knewave: require("../assets/fonts/Knewave-Regular.ttf"), 
+  });
+
+  if (!fontsLoaded) {
+    return <Text>Carregando...</Text>;
+  }
+
   return (
     <ScrollView style={styles.container}>
-      <View style={styles.section}>
-        <Text style={styles.title}>Back-End</Text>
-        <Text style={styles.text}>Java, Python</Text>
+      <View style={styles.header}>
+        <Text style={styles.textHeader}>O QUE EU MAIS GOSTO DE CADA TEMA DE TECNOLOGIA:</Text>
       </View>
-
-      <View style={styles.section}>
-        <Text style={styles.title}>Cybersecurity</Text>
-        <Text style={styles.text}>Segurança digital, defesa contra ataques e boas práticas.</Text>
-      </View>
-
-      <View style={styles.section}>
-        <Text style={styles.title}>Inteligência Artificial (AI)</Text>
-        <Text style={styles.text}>Chatbots e soluções inteligentes.</Text>
-      </View>
-
-      <View style={styles.section}>
-        <Text style={styles.title}>Front-End</Text>
-        <Text style={styles.text}>React e a construção de interfaces modernas.</Text>
-      </View>
-
-      <View style={styles.section}>
-        <Text style={styles.title}>Mobile</Text>
-        <Text style={styles.text}>React Native e o desenvolvimento para Android/iOS.</Text>
-      </View>
+      {temas.map((item, index) => (
+        <Card title={item.title} text={item.text} key={index} />
+      ))}
     </ScrollView>
   );
 }
@@ -36,23 +30,17 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#f5f5f5",
   },
-  section: {
-    height: 200,
-    justifyContent: "center",
+  header: {
+    flex: 1,
     alignItems: "center",
-    marginBottom: 15,
-    backgroundColor: "#fff",
-    shadowOpacity: 0.2,
-    shadowRadius: 4,
-    padding: 20,
+    justifyContent:"center",
+    padding:30,
+    backgroundColor: "black",
   },
-  title: {
-    fontSize: 22,
-    fontWeight: "bold",
-    marginBottom: 8,
-  },
-  text: {
-    fontSize: 16,
-    textAlign: "center",
-  },
+  textHeader: {
+    fontSize: 25,
+    textAlign:"center",
+    color:"white",
+    fontFamily: "Knewave",
+  }
 });
