@@ -43,15 +43,6 @@ Os seguintes scripts estão disponíveis:
 - A interface do usuário é construída com um componente `Card.tsx` para exibir os temas.  
 - O aplicativo usa a fonte `Knewave-Regular.ttf`, que é carregada no `app/index.tsx`.
 
-## Saiba mais
-
-Para saber mais sobre como desenvolver seu projeto com Expo, consulte os seguintes recursos:
-
-- [Documentação do Expo](https://docs.expo.dev/): Aprenda os fundamentos ou aprofunde-se em tópicos avançados com nossos guias.  
-- [Tutorial Learn Expo](https://docs.expo.dev/get-started/installation/): Siga um tutorial passo a passo onde você criará um projeto que roda em Android, iOS e na web.
-
-## Junte-se à comunidade
-
 Junte-se à nossa comunidade de desenvolvedores criando aplicativos universais:
 
 - [Expo no GitHub](https://github.com/expo/expo): Veja nossa plataforma de código aberto e contribua.  
