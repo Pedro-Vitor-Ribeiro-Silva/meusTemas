@@ -1,50 +1,59 @@
 # Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um projeto [Expo](https://expo.dev) criado com [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
+## Começar
 
-1. Install dependencies
+1. Instale as dependências:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. Inicie o aplicativo:
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+No output, você encontrará opções para abrir o aplicativo em:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- um build de desenvolvimento  
+- um emulador Android  
+- um simulador iOS  
+- Expo Go, um sandbox limitado para testar o desenvolvimento de aplicativos com Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Você pode começar a desenvolver editando os arquivos dentro do diretório `app`. Este projeto usa roteamento baseado em arquivos.
 
-## Get a fresh project
+## Scripts disponíveis
 
-When you're ready, run:
+Os seguintes scripts estão disponíveis:
 
-```bash
-npm run reset-project
-```
+- `npm start`: Inicia o servidor de desenvolvimento Expo.  
+- `npm run android`: Inicia o aplicativo em um dispositivo Android.  
+- `npm run ios`: Inicia o aplicativo em um simulador iOS.  
+- `npm run web`: Inicia o aplicativo na web.  
+- `npm run lint`: Executa a verificação de linting com ESLint.  
+- `npm run reset-project`: Move o código inicial para o diretório `app-example` e cria um novo diretório `app` em branco.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Estrutura do projeto
 
-## Learn more
+- O aplicativo utiliza `expo-router` para roteamento.  
+- Os dados do aplicativo são carregados de um arquivo `JSON` (`temas.json`).  
+- A interface do usuário é construída com um componente `Card.tsx` para exibir os temas.  
+- O aplicativo usa a fonte `Knewave-Regular.ttf`, que é carregada no `app/index.tsx`.
 
-To learn more about developing your project with Expo, look at the following resources:
+## Saiba mais
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Para saber mais sobre como desenvolver seu projeto com Expo, consulte os seguintes recursos:
 
-## Join the community
+- [Documentação do Expo](https://docs.expo.dev/): Aprenda os fundamentos ou aprofunde-se em tópicos avançados com nossos guias.  
+- [Tutorial Learn Expo](https://docs.expo.dev/get-started/installation/): Siga um tutorial passo a passo onde você criará um projeto que roda em Android, iOS e na web.
 
-Join our community of developers creating universal apps.
+## Junte-se à comunidade
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Junte-se à nossa comunidade de desenvolvedores criando aplicativos universais:
+
+- [Expo no GitHub](https://github.com/expo/expo): Veja nossa plataforma de código aberto e contribua.  
+- [Comunidade no Discord](https://discord.com/invite/expo): Converse com usuários do Expo e faça perguntas.
+
